@@ -539,7 +539,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         file_id=file_id,
                         caption=f_caption,
                         protect_content=True if ident == "filep" else False,
-                        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝖯𝖨𝖱𝖮 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url="https://t.me/piroxbots") ] ] ))
+                        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('🎪 Movie Group 🎪', url="https://t.me/+Qw1Mf7bTF7k5ZDZl") ] ] ))
                 else:
                     await query.answer(f"𝖧𝖾𝗒 {query.from_user.first_name}, 𝖳𝗁𝗂𝗌 𝗂𝗌 𝗇𝗈𝗍 𝗒𝗈𝗎𝗋 𝗋𝖾𝗊𝗎𝖾𝗌𝗍 !", show_alert=True)
                 await query.answer('𝖢𝗁𝖾𝖼𝗄 𝖯𝖬, 𝖨 𝗁𝖺𝗏𝖾 𝗌𝖾𝗇𝗍 𝖿𝗂𝗅𝖾𝗌 𝗂𝗇 𝖯𝖬', show_alert=True)
@@ -896,7 +896,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('⚡ ADD ME TO YOUR GROUP ⚡', url=f"http://t.me/{temp.U_NAME}?startgroup=true")
                 ],[
                     InlineKeyboardButton('‼️ DMCA', callback_data="owner_info"),
-                    InlineKeyboardButton('Movie Group 🎪', url=f"https://t.me/{SUPPORT_CHAT}")
+                    InlineKeyboardButton('Movie Group 🎪', url="https://t.me/+Qw1Mf7bTF7k5ZDZl")
                 ],[
                     InlineKeyboardButton('ℹ️ Help', callback_data='help'),
                     InlineKeyboardButton('About 😊', callback_data='about'),
