@@ -119,16 +119,16 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'😇 Info', 'tips'),
-                InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
+                InlineKeyboardButton(f'📬 ɪɴꜰᴏ', 'tips'),
+                InlineKeyboardButton(f'✒️ ᴛɪᴩꜱ', 'info')
             ]
             )
 
         else:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'😇 Info', 'tips'),
-                InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
+                InlineKeyboardButton(f'📬 ɪɴꜰᴏ', 'tips'),
+                InlineKeyboardButton(f'✒️ ᴛɪᴩꜱ', 'info')
             ]
             )
                 
@@ -139,16 +139,16 @@ async def next_page(bot, query):
         if settings['auto_delete']:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'😇 Info', 'tips'),
-                InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
+                InlineKeyboardButton(f'📬 ɪɴꜰᴏ', 'tips'),
+                InlineKeyboardButton(f'✒️ ᴛɪᴩꜱ', 'info')
             ]
             )
 
         else:
             btn.insert(0, 
             [
-                InlineKeyboardButton(f'😇 Info', 'tips'),
-                InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
+                InlineKeyboardButton(f'📬 ɪɴꜰᴏ', 'tips'),
+                InlineKeyboardButton(f'✒️ ᴛɪᴩꜱ', 'info')
             ]
             )
     try:
@@ -577,7 +577,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             file_id=file_id,
             caption=f_caption,
             protect_content=True if ident == 'checksubp' else False,
-            reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('🎪 Movie Group 🎪', url="https://t.me/piroxbots") ] ] ))
+            reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('🎪 Movie Group 🎪', url="https://t.me/+Qw1Mf7bTF7k5ZDZl") ] ] ))
     elif query.data == "pages":
         await query.answer()
 
