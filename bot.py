@@ -21,7 +21,7 @@ import pytz
 from aiohttp import web
 from plugins import web_server
 
- class Bot(Client):
+class Bot(Client):
 
     def __init__(self):
         super().__init__(
