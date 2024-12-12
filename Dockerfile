@@ -1,21 +1,13 @@
-FROM debian:latest
-
-
+FROM python:3.8-slim-buster
 
 RUN apt update && apt upgrade -y
-
-RUN apt install git curl python3-pip ffmpeg -y
-
-RUN pip3 install -U pip
+RUN apt install git -y
+COPY requirements.txt /requirements.txt
 
 RUN cd /
-
-RUN git clone https://github.com/Jack-Official
-
-RUN cd BEN-10-BOT
-
+RUN pip3 install -U pip && pip3 install -U -r requirements.txt
 WORKDIR /BEN-10-BOT
 
-RUN pip3 install -U -r requirements.txt
+COPY . .
 
-CMD python3 PROCFILE
+CMD ["python3", "bot.py"]
