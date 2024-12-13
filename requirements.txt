@@ -12,4 +12,4 @@ pytz
 aiohttp
 psutil==5.9.4
 pyrofork==2.3.43
-pyrotgfork
+
